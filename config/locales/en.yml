@@ -29,5 +29,12 @@
 
 en:
   hello: "Hello world"
-en:
-  hello: "Hola Mundo"
+  products:
+    index:
+      title: "Products"
+
+es:
+  hello: "Hola mundo"
+  products:
+    index:
+      title: "Productos"

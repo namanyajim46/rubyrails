@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   resources :passwords, param: :token
    get "up" => "rails/health#show", as: :rails_health_check
    
-   resources :products
+   
    root "products#index"
 
+    resources :products do
+    resources :subscribers, only: [ :create ]
+  end
 
 
 

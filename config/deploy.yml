@@ -2,7 +2,7 @@
 service: store
 
 # Name of the container image (use your-user/app-name on external registries).
-image: store
+image: namanyajim/store
 
 # Deploy to these servers.
 servers:
@@ -20,9 +20,9 @@ servers:
 #
 # Don't use this when deploying to multiple web servers (then you have to terminate SSL at your load balancer).
 #
-# proxy:
-#   ssl: true
-#   host: app.example.com
+proxy:
+   ssl: true
+   host: store.rails.com
 
 # Where you keep your container images.
 registry:
@@ -30,7 +30,7 @@ registry:
   server: localhost:5555
 
   # Needed for authenticated registries.
-  # username: your-user
+  username: namanyajim
 
   # Always use an access token rather than real password when possible.
   # password:
